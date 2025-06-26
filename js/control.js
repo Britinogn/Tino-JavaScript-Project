@@ -45,7 +45,7 @@ switch (color){
         break;
 
     default:
-        console.log("The color is red");
+        console.log("Unknown Color");
         break;
 } 
 
