@@ -64,9 +64,6 @@ let quotient = num1 / num2; */
 // } while(num3 >= 1);
 
 
-
-
-
 // create an array called myFruits with 5 fruits.
 // implement the Pop , push , unshift, reverse 
 
