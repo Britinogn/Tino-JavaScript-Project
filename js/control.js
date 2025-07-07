@@ -63,7 +63,7 @@ for (let i = 0 ; i < 10; i++){
 
 let num = 1 ;
 
-while(num <11){
+while(num < 11){
     console.log(num);
     num++
 }

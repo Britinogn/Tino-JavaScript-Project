@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        body{
+            background: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            text-decoration: none;
+            display: flex;
+            justify-content:start;
+            gap: 2rem;
+            
+        }
+
+        li{
+            font-size: 1.3rem;
+        }
+
+        a{
+            color: rgb(212, 200, 200);
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(144, 91, 91);
+            background-color: aliceblue;
+            border-radius: 0.5rem;
+            padding: 5px 5px 5px 5px ;
+        }
+    </style>
+<body>
+
+    <ul class="" id="showMenu">
+        <li><a href="">Tino</a></li>
+        <li><a href="">Billy</a></li>
+        <li><a href="">Mr West </a></li>
+        <li><a href="">Papa</a></li>
+       <li><a href="">NovaTech</a></li>
+    </ul>
+
+    <script>
+        let todoList = [];
+
+        function showMenu() {
+            console.log("\n ... TodoList....");
+            console.log("1. ViewTask");
+            console.log("2. Add Task");
+        }
+
+        function viewTask() {
+            if (todoList.length === 0) {
+                console.log("No task available");
+            } else{
+                console.log("\nTask available ");
+                for (let i = 0; i < todoList.length; i++) {
+                    console.log(todoList[i]);
+                    
+                }
+            }
+            
+        }
+
+
+        function addTask(task) {
+            todoList.push(task);
+            console.log("Added Task:", task);
+        }
+
+
+        showMenu();
+
+        addTask("Welcome to Campus");
+        addTask("Congratulation on your graduation");
+
+        viewTask();
+    </script>
+</body>
+</html>
