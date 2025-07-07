@@ -20,7 +20,7 @@ while(num <11 ){
 
 
 // do while loop
-let age = 1;
+let age = 1; 
 do { 
      if(age % 2 === 0){
         console.log(age + " is an even number ");

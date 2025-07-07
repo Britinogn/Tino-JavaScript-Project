@@ -1,3 +1,4 @@
+/*
 let todoMenu = [];
 
 function userName() {
@@ -32,3 +33,32 @@ addTasks("Welcome to onBoard");
 
 viewTasks();
 
+*/
+
+
+let movies = [];
+
+function displayMovies() {
+    console.log("\nList of Movies");
+    console.log("Add Movie \n ");
+    
+}
+
+function addMovie(moviename) {
+    movies.push(moviename);
+    console.log("Movie Added :", moviename);
+}
+
+displayMovies();
+
+addMovie("A pursuit for happiness");
+addMovie("Rango");
+addMovie("Zootopia");
+addMovie("Coach Carter");
+addMovie("Wreck it Ralph");
+addMovie("Prison Break");
+addMovie("Vikings \n");
+
+for (let i = 0; i < 7; i++) {
+    console.log(movies[i]);
+}
