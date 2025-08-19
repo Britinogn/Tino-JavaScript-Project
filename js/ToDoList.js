@@ -27,11 +27,25 @@ function viewTask() {
 function addTasks(task) {
     todoList.push(task);
     console.log("Task Added: ",  task );
-    
+   
 }
 showMenu();
 
 addTasks("Buy Groceries");
-addTasks("Hit the Gym");
+addTasks("Hit the Gym\n");
 
 viewTask();
+
+
+const name = 'john';
+const age = 18;
+
+const hello = 'my name is ${name} and i am ${age} ';
+console.log(hello);
+
+
+const addNums = (num1 =1 , num2 = 2)  =>{
+    console.log(num1 + num2);
+}
+
+addNums(5,5);
