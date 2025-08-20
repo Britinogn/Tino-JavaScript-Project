@@ -7,7 +7,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
 </head>
-<body>
+<body class="p-5">
 
     <p id="demo">Hello World </p>
     <button onclick="changeText()">Click Here</button>
@@ -29,7 +29,7 @@
     <!-- theme color/ background color -->
 
     <button onclick="dark()">Dark Theme</button>
-    <button onclick="light()">Light Theme</button>  
+    <button onclick="light()">Light Theme</button>  <br><br>
 
 
     <input type="text"  id="num1" placeholder="Number 1">
@@ -45,7 +45,14 @@
     <h2 id = "count">0</h2>
     <button onclick="increase()">+</button>
     <button onclick="decrease()">-</button>
-    <button onclick="reset()" >Reset</button>
+    <button onclick="reset()" >Reset</button><br><br>
+
+    <div>
+        <h2 >Manager</h2>
+        <img id="image" src="/NewProject2025/image/img1.jpg" alt="" width="200px"> <br><br>
+        <button onclick="changeImage()" class="bg-red-500 p-3 text-white cursor-pointer text-lg">Change image</button>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

@@ -83,3 +83,47 @@ function reset(){
     display.innerText = count;
 }
 
+// image change
+
+
+function changeImage(){
+    const image = document.getElementById("image").src = "/NewProject2025/image/img4.jpg";
+}
+
+/*
+function changeImage(){
+    const image = document.getElementById("image");
+
+    if (image.src.includes("img1.jpg")) {
+        image.src = "/NewProject2025/image/img2.jpg"
+    } else {
+         image.src = "/NewProject2025/image/img1.jpg"
+    }
+} */
+
+/*
+const images = [,
+    "/NewProject2025/image/heroimg.jpg",
+    "/NewProject2025/image/img2.jpg",
+    "/NewProject2025/image/img3.jpg",
+    "/NewProject2025/image/img4.jpg"
+];
+
+let i = 0;
+
+function changeImage() {
+    const image = document.getElementById("image");
+        i++; 
+
+    if (i >= images.lenght) {
+   
+        i = 0;
+    } else {
+        image.src = images[i];
+        alert("empty")
+    }
+
+    i = (i + 1) % images.length;
+    image.src = images[i];
+} */
+
