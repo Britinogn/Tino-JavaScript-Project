@@ -1,8 +1,3 @@
-function change(params) {
-    const paragraph = document.getElementById("demo").innerText = "Text change Successfully";
-}
-
-
 function changeText() {
     const changeColor = document.getElementById("demo").innerText = "Text changed Successfully!!";
 }
