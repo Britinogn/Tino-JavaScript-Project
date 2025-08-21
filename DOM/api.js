@@ -58,13 +58,14 @@ function getPost(){
 
     const randomId = Math.floor(Math.random() * 100) + 1;
 
-    fetch(`https://dummyjson.com/posts${randomId}`)
-    .then(Response => Response.json())
-    .then(data => {
+    fetch(`https://dummyjson.com/posts/${randomId}`)
+    .then(response => response.json())
+    .then(post => {
 
-        postElement.innerHTML = `
-            <h3>${post.title}</h3>
+        container.innerHTML = `
+            <h3 class="py-3 font-bold">${post.title}</h3>
             <p>${post.body}</p>
         `;
     })
+    .catch(error => console.error("Error fetching data:", error));
 }

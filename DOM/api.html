@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="py-50 px-25">
 
     <!-- <h1>Latest Post</h1>
 
@@ -13,10 +19,11 @@
         
     </div> -->
 
-    <h1>Random Post</h1>
-    <button onclick="getPost()" >Get a Random Post</button>
+    <h1 class="py-5 font-bold text-3xl">Random Post</h1>
+    
+    <div id="post-container" class="bg-gray-500 text-white p-12 text-lg "></div>
 
-    <div id="post-container"></div>
+    <button onclick="getPost()" class="text-2xl bg-black p-2 text-white font-bold row-auto mt-5 rounded-tl-lg" >Get a Random Post</button>
 
     <script src="api.js"></script>
 </body>
