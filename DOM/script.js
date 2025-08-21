@@ -42,6 +42,7 @@ function light(){
 
 function add(){
     result.innerText = "Added Result: " + (parseFloat(num1.value) + parseFloat(num2.value));
+    console.log(add);
 }
 
 function sub(){
@@ -125,5 +126,5 @@ function changeImage() {
 
     i = (i + 1) % images.length;
     image.src = images[i];
-} */
+} */ 
 
