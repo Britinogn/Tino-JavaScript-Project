@@ -54,7 +54,7 @@ fetch('https://dummyjson.com/products')
 const container = document.getElementById('post-container');
 
 function getPost(){
-    container.innerHTML = '<p>Loading.......</p>';
+    container.innerHTML = '<p class="py-1 font-bold text-md" >Loading.......</p>';
 
     const randomId = Math.floor(Math.random() * 100) + 1;
 

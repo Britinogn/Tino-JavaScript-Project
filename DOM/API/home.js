@@ -59,6 +59,7 @@ async  function handleLogin(event){
             }),
         
         })
+        
         //if  the logins fails
         if(!loginResponse.ok){
             throw new Error('Login Failed , Please check your Credentails.')
@@ -89,12 +90,7 @@ async  function handleLogin(event){
             <p><strong>Email: </strong>${profileData.email}</p>
             <p><strong> Gender:</strong> ${profileData.gender}</p>
             <img src=" ${profileData.image}"/>
-
-
-
-
         `;
-
 
     } catch (error) {
         container.innerHTML = `<p style="color: #ef1010ff;">Error: ${error.message}</p>`;
