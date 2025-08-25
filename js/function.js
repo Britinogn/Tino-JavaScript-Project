@@ -53,3 +53,20 @@ function evenOdd() {
 }
 
 evenOdd();
+
+// let product = 1 ;
+
+// function newPoduct(){
+//     while(product <= 10){
+//         product++
+//         if (product % 2 === 0) {
+//             console.log(product + " " + "produce is x2" );
+            
+//         } else {
+//             console.log(product + " " + "produce is x3" );
+//         }
+//     } 
+    
+// }
+
+//  newPoduct()

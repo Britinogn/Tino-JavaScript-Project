@@ -5,15 +5,15 @@ names[1]= "King";
 // console.log(names);
 
 // arrays with the pop method , removes the last item in an array
-console.log(names.pop());
+// console.log(names.pop());
 console.log(names);
 
 // arrays with the length method , return the total item in an array
 
-console.log(names.length);
+console.log(names[0].length);
 
 // arrays with the push method , adds an item in an array. 
-names.push("Jeff", "Wisdom");
+names.push("Jeff", "Wisdom" ,'Uwakonye');
 console.log(names);
 
 // arrays with the shift method , removes the first item in an array. 

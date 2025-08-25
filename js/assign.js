@@ -11,9 +11,9 @@ for(let i = 1; i < 11; i++){
 let num = 1;
 while(num <11 ){
     if(num % 2 === 0){
-        console.log(num + " is an even number ");
+        console.log(num + " is an even numberr ");
     }else{
-          console.log(num + " is an odd number ");
+          console.log(num + " is an odd numberr ");
     }
     num++
 }
@@ -23,13 +23,9 @@ while(num <11 ){
 let age = 1; 
 do { 
      if(age % 2 === 0){
-        console.log(age + " is an even number ");
+        console.log(age + " is an evenn number ");
     }else{
-          console.log(age + " is an odd number ");
+          console.log(age + " is an oddd number ");
     }
     age++
-} while(age < 11);
-
-
-
-
+} while(age < 11)

@@ -23,7 +23,7 @@ fetch('https://dummyjson.com/posts')
     .catch(error => console.error("Error fetching data:", error)); */
 
 
-/*
+
 const container = document.getElementById('posts-container');
 
 fetch('https://dummyjson.com/products')
@@ -44,13 +44,13 @@ fetch('https://dummyjson.com/products')
             `
             container.appendChild(postElement)
         });
-    }) */
+    }) 
 
     // .catch(error => console.error("Error fetching data:", error));
 
 
 
-
+/*
 const container = document.getElementById('post-container');
 
 function getPost(){
@@ -68,4 +68,4 @@ function getPost(){
         `;
     })
     .catch(error => console.error("Error fetching data:", error));
-}
+} */

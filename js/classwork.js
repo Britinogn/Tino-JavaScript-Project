@@ -15,20 +15,22 @@ let z = 20/8;
 console.log(x);
 console.log(y);
 console.log(z); 
-
+ */
 
 let num1 = 20 ;
 let num2 = 8;
 
+
+
 let sum = num1 + num2;
 let diff = num1 - num2;
 let product = num1 * num2;
-let quotient = num1 / num2; */
+let quotient = num1 / num2;
 
-// console.log("The sum of 20 + 8 is: " + sum);
-// console.log("The difference of 20 - 8 is: " + diff);
-// console.log("The product of 20 * 8 is: " + product);
-// console.log("The quotient of 20 / 8 is: " + quotient);
+console.log("The sum of 20 + 8 is: " + sum);
+console.log("The difference of 20 - 8 is: " + diff);
+console.log("The product of 20 * 8 is: " + product);
+console.log("The quotient of 20 / 8 is: " + quotient);
 
 
 
@@ -71,16 +73,19 @@ let myFruits = ["Orange", "Apple", "Mango", "Pinapple", "Avocado"];
 
 
 myFruits.pop();
- console.log(myFruits); 
+    console.log(myFruits); 
 
 myFruits.push("Pear", "Watermelon");
- console.log(myFruits);  
+    console.log(myFruits);  
 
 myFruits.unshift("Yam");
- console.log(myFruits); 
+    console.log(myFruits); 
 
 myFruits.reverse();
-console.log(myFruits); 
+    console.log(myFruits); 
+
+myFruits.shift();
+    console.log(myFruits); 
 
 // for (i = 0; i < myFruits.length; i++) {
 //     console.log(myFruits); 
