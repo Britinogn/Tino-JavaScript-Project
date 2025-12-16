@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATW HQ - Premier Property Solutions | Launching Soon</title>
+    <meta name="description" content="ATW HQ: Revolutionizing property and vehicle listings with secure, role-based dashboards for users, agents, and admins. Secure authentication, real-time chat, and seamless payments. Join the waitlist today.">
+    <style>
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: linear-gradient(135deg, #004080 0%, #0080FF 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; transition: opacity 0.3s; }
+        .nav-links a:hover { opacity: 0.8; }
+        .cta-btn { background: #FFD700; color: #004080; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: transform 0.3s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,64,128,0.8), rgba(0,128,255,0.8)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMTIwIj48IS0tIFRoZSBwcm9wZXJ0eS1pbnNwaXJlZCBiYWNrZ3JvdW5kIGlzIHNpbXVsYXRlZCBoZXJlIHdpdGggYSBzdHJpcGVkIHBhdHRlcm4gZm9yIGEgY2FsbiwgZW5oYW5jaW5nIHRoZSBsYW5kaW5nIHBhZ2UgLS0+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNmOGY5ZmEiLz48L3N2Zz4='); background-size: cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 80px; }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        .launch-form { background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 10px; max-width: 500px; margin: 0 auto; }
+        .launch-form input { width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+        .launch-form button { width: 100%; padding: 1rem; background: #004080; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+        .launch-form button:hover { background: #0080FF; }
+
+        /* Features Section */
+        .features { padding: 5rem 0; background: white; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #004080; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { text-align: center; padding: 2rem; border: 1px solid #e9ecef; border-radius: 10px; transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #0080FF; }
+        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+        /* About Section */
+        .about { padding: 5rem 0; background: #f8f9fa; }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .about-text h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #004080; }
+        .about-text p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+        /* Footer */
+        footer { background: #004080; color: white; text-align: center; padding: 2rem 0; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+        .footer-links a { color: white; text-decoration: none; }
+
+        /* Responsive */
+        @media (max-width: 768px) { .hero-content h1 { font-size: 2.5rem; } .about-content { grid-template-columns: 1fr; } .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo" href="/index.html" >ATW HQ</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#launch" class="cta-btn">Join Waitlist</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Revolutionizing Property Solutions</h1>
+            <p>ATW HQ: Secure platform for listing properties and vehicles with role-based dashboards, real-time chat, and seamless payments. Launching soon—be the first to experience excellence.</p>
+            <div class="launch-form" id="launch">
+                <h3>Join the Waitlist</h3>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" href="mailto:lernstasy@gmail.com">Notify Me</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Core Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Property & Vehicle Listings</h3>
+                    <p>Effortlessly post and manage properties and cars with Cloudinary image uploads and detailed schemas for make, model, year, and pricing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Role-Based Access</h3>
+                    <p>JWT authentication for users, agents, and admins. Tailored dashboards: personal stats for users, client metrics for agents, global analytics for admins.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Real-Time Chat</h3>
+                    <p>Socket.io-powered conversations for seamless agent-client interactions, integrated with your existing chat routes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Seamless Payments</h3>
+                    <p>Paystack integration for secure transactions on listings, with full CRUD support for payments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Dashboards</h3>
+                    <p>Comprehensive views with pagination, recent activity, and populated user details for efficient management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Robust Backend</h3>
+                    <p>Express.js with MongoDB, Redis caching, and Docker deployment for scalability and reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>About ATW HQ</h2>
+                    <p>ATW HQ is a comprehensive platform designed for property and vehicle enthusiasts, agents, and administrators. With intuitive interfaces, secure middleware for authentication and authorization, and features like populated listings and pending approvals, we streamline real estate transactions.</p>
+                    <p>Built with modern technologies including TypeScript, Mongoose schemas for Properties and Cars, and role-specific endpoints, ATW HQ ensures data integrity and user privacy.</p>
+                </div>
+                <div>
+                    <!-- Embed Logo SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+                        <rect width="400" height="120" fill="#ffffff"/>
+                        <defs>
+                            <linearGradient id="houseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#004080;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0080FF;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#004080;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(20, 20)">
+                            <path d="M 40 15 L 5 45 L 15 45 L 15 75 L 65 75 L 65 45 L 75 45 Z" fill="url(#houseGradient)" stroke="#003366" stroke-width="2"/>
+                            <rect x="30" y="50" width="20" height="25" fill="#f8f9fa" rx="2" stroke="#e9ecef" stroke-width="1"/>
+                            <rect x="55" y="50" width="8" height="8" fill="#e3f2fd" rx="1" stroke="#bbdefb" stroke-width="1"/>
+                            <rect x="52" y="25" width="8" height="15" fill="#003366"/>
+                            <g transform="translate(10, 60) scale(0.8)">
+                                <circle cx="5" cy="5" r="3" fill="#FFD700" stroke="#FFA500" stroke-width="0.5"/>
+                                <rect x="5" y="8" width="8" height="12" rx="1" fill="#FFA500"/>
+                                <circle cx="9" cy="11" r="1" fill="#FFD700"/>
+                            </g>
+                        </g>
+                        <text x="110" y="55" font-family="'Arial Black', 'Helvetica Bold', sans-serif" font-size="38" font-weight="900" fill="url(#textGradient)" letter-spacing="2">ATW</text>
+                        <g transform="translate(245, 30)">
+                            <rect x="0" y="0" width="50" height="30" fill="#004080" rx="15"/>
+                            <text x="25" y="21" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">HQ</text>
+                        </g>
+                        <text x="110" y="80" font-family="'Arial Italic', sans-serif" font-size="14" font-weight="300" font-style="italic" fill="#6c757d" letter-spacing="1.5">Property Solutions</text>
+                        <line x1="110" y1="88" x2="300" y2="88" stroke="#0080FF" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="mailto:lernstasy@gmail.com">Contact</a>
+            </div>
+            <p>&copy; 2025 ATW HQ. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handling (simulate submission)
+        document.querySelector('.launch-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for joining the waitlist! We\'ll notify you on launch.');
+        });
+    </script>
+</body>
+</html>
